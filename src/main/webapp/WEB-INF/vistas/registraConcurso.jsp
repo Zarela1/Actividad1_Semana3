@@ -77,7 +77,7 @@ $("#id_registrar").click(function (){
             url: "registraConcurso", 
             data: $('#id_form').serialize(),
             success: function(data){
-            	mostrarMensaje(data.MENSAJE);
+            	mostrarMensaje(data.MENSAJE); 
             	validator.resetForm();
             	limpiarFormulario();
             },

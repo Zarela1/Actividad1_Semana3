@@ -15,7 +15,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter
+@Setter 
 @Entity
 @Table(name = "concurso")
 public class Concurso {

@@ -43,7 +43,7 @@
 				</div>
 				<div class="col-sm-8">
 					<input class="form-control" type="text" id="id_correo" name="correo" placeholder="Ingrese el correo" maxlength="100">
-				</div> 
+				</div>  
 			</div>
 			<div class="form-group  col-sm-6">
 				<div class="col-sm-4">
