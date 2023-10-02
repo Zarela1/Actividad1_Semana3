@@ -127,7 +127,7 @@ $(document).ready(function() {
                         },
                         regexp: {
                             regexp: /^[0-9]{8}$/,
-                            message: 'el dni es 8 dígitos'
+                            message: 'El dni es de 8 dígitos numéricos'
                         }
                     }
                 },
@@ -138,7 +138,7 @@ $(document).ready(function() {
                              message: 'El correo es obligatorio'
                         },
                         emailAddress: {
-                            message: 'El correo no es valido'
+                            message: 'El correo no es válido'
                         }
                     }
                 },
@@ -146,7 +146,7 @@ $(document).ready(function() {
                     selector: "#id_fecha",
                     validators:{
                         notEmpty: {
-                             message: 'La fecha es obligatorio'
+                             message: 'La fecha es obligatoria'
                         }
                     }
                 },

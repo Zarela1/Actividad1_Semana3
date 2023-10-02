@@ -91,11 +91,10 @@ $("#id_registrar").click(function (){
 
 
 function limpiarFormulario(){
-	$('#id_medicamento').val('');
 	$('#id_nombre').val('');
-	$('#id_precio').val('');
 	$('#id_stock').val('');
-	$('#id_nombre').val('');
+	$('#id_precio').val('');
+	$('#id_laboratorio').val('');
 }
 
 $(document).ready(function() {
@@ -131,6 +130,10 @@ $(document).ready(function() {
                             max: 5,
                             message: 'El precio del medicamento es de 1 y 5 caracteres'
                         },
+                        regexp: {
+                            regexp: /^(\d*\.)?\d+$/, 
+                            message: 'Ingrese un valor correcto'
+                        }
                     }
                 },
                 stock:{
@@ -140,10 +143,14 @@ $(document).ready(function() {
                              message: 'El stock del medicamento es obligatorio'
                         },
                         stringLength: {
-                            min: 3,
-                            max: 10,
-                            message: 'El stock del medicamento es de 3 a 10 caracteres'
-                        },
+                            min: 1,
+                            max: 5,
+                            message: 'El stock del medicamento es como mínimo de un dígito'
+                        }, 
+                        regexp: {
+                            regexp: /^[1-9]\d*$/,
+                            message: 'Ingrese un valor correcto'
+                        }
                     }
                 },
                 laboratorio:{

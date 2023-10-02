@@ -32,7 +32,7 @@
 				<div class="col-sm-4">
 					<label class="control-label" for="id_fechaInicio">Fecha de inicio</label>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-8">
 					<input class="form-control" type="date" id="id_fechaInicio" name="fechaInicio" placeholder="Ingrese la fecha de inicio" maxlength="100">
 		 		</div>
 			</div>
@@ -42,7 +42,7 @@
 				<div class="col-sm-4">
 					<label class="control-label" for="id_fechaFin">Fecha de fin</label>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-8">
 					<input class="form-control" type="date" id="id_fechaFin" name="fechaFin" placeholder="Ingrese la fecha de fin" maxlength="100">
 		 		</div>
 			</div>
@@ -116,7 +116,7 @@ $(document).ready(function() {
                         stringLength: {
                             min: 5,
                             max: 50,
-                            message: 'El ID es de 5 a 50 caracteres'
+                            message: 'El nombre es de 5 a 50 caracteres'
                         },
                     }
                 },
@@ -147,6 +147,10 @@ $(document).ready(function() {
                             max: 10,
                             message: 'El estado es de 6 a 10 caracteres'
                         },
+                        regexp: {
+                            regexp: /^[^\d]+$/,
+                            message: 'No puede ingresar valores numéricos para este dato'
+                        }
                     }
                 },
         }   
