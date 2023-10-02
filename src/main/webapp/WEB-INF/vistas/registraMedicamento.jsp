@@ -72,7 +72,7 @@ $("#id_registrar").click(function (){
     //Pregunta si es valido el formulario(Si no tiene errores)
 	if (validator.isValid()){
 		$.ajax({
-    		type: "POST",
+    		type: "POST", 
             url: "registraMedicamento", 
             data: $('#id_form').serialize(),
             success: function(data){
